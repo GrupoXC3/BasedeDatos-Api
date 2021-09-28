@@ -48,8 +48,11 @@ express_app.use(cors());
 let router = express.Router();
 
 
-router.get("/", (req,res) => {
-    res.send("<h1>Bienvenido</h1>");
+router.get("/", async(req,res) => {
+    let querySnapshot = await firestore.getDocs(Libros);
+    let todos_los_libros = querySnapshot.docs.map(doc => doc.data());
+    // console.log(todos_los_libros);
+    res.json(todos_los_libros);
 })
 
 
