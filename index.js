@@ -11,14 +11,14 @@ const express_app = express();
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "Obtener de la pagina de firebase",
-    authDomain: "Obtener de la pagina de firebase",
-    databaseURL: "Obtener de la pagina de firebase",
-    projectId: "Obtener de la pagina de firebase",
-    storageBucket: "Obtener de la pagina de firebase",
-    messagingSenderId: "Obtener de la pagina de firebase",
-    appId: "Obtener de la pagina de firebase",
-    measurementId: "Obtener de la pagina de firebase"
+    apiKey: process.env.apiKey,
+    authDomain: process.env.authDomain,
+    databaseURL: process.env.databaseURL,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId,
+    measurementId: process.env.measurementId
 };
 
 const categorias = [
