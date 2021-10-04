@@ -66,9 +66,9 @@ router.get("/mas-destacados", async(req, res) => {
 
 
 router.get("/libros/:id", async (req, res)=>{
-    let libro_id = `libro ${req.params.id}`;
+    let libro_id = `${req.params.id}`;
     let libro = await firestore.getDoc(firestore.doc(Libros, libro_id));
-    
+
     if (libro.exists()){
         res.json(libro.data());
     }
