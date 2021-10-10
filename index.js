@@ -25,7 +25,7 @@ const categorias = [
     "Libro Album",
     "Cuento",
     "Novela",
-    "Mitos y leyendas,
+    "Mitos y leyendas",
     "Historieta",
     "Teatro",
     "Poesia"
