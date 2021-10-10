@@ -25,11 +25,10 @@ const categorias = [
     "Libro Album",
     "Cuento",
     "Novela",
-    "Novela grafica",
-    "Leyenda y Mito",
+    "Mitos y leyendas,
     "Historieta",
     "Teatro",
-    "Poesía"
+    "Poesia"
 ]
 
 // Initialize Firebase
